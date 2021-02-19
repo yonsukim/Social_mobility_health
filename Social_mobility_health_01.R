@@ -17,7 +17,7 @@ library(dplyr)
 ## Import SPSS file
 
 library(haven)
-path = file.path("C:\\Users\\Dongwoo\\Documents\\Research\\Data Warehouse\\Social_Mobility" ,"kgss20032016_kor_6042017_public.sav")
+path = file.path("C:\\Users\\Dongwoo\\Documents\\Research\\Data Warehouse\\Social_Mobility" ,"filename.sav")
 df0 = read_sav(path)
 
 # View(df0)
