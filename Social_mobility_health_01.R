@@ -11,3 +11,19 @@ library(readstata13)
 library("readxl")
 # library(readxl)
 library(dplyr)
+
+
+
+## Import SPSS file
+
+library(haven)
+path = file.path("C:\\Users\\Dongwoo\\Documents\\Research\\Data Warehouse\\Social_Mobility" ,"kgss20032016_kor_6042017_public.sav")
+df0 = read_sav(path)
+
+# View(df0)
+
+
+df1 <- df0 %>%
+  dplyr::select(YEAR) ## Case-sensitive
+
+# head(df1)
